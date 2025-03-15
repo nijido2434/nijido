@@ -46,18 +46,18 @@
   }
 
   .answers .circle:nth-child(1), .answers .circle:nth-child(5) {
-    width: 40px !important;
-    height: 40px !important;
-  }
-
-  .answers .circle:nth-child(2), .answers .circle:nth-child(4) {
     width: 35px !important;
     height: 35px !important;
   }
 
+  .answers .circle:nth-child(2), .answers .circle:nth-child(4) {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
   .answers .circle:nth-child(3) {
-    width: 25px !important;
-    height: 25px !important;
+    width: 20px !important;
+    height: 20px !important;
   }
 
   .circle.selected {
@@ -94,7 +94,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 30px;
   }
 }
 
