@@ -29,10 +29,21 @@
     padding: 10px 0;
     flex-wrap: nowrap;
     overflow-x: auto;
+    position: relative;
   }
 
   .label {
     font-size: 12px;
+    position: absolute;
+    top: -20px;
+  }
+
+  .label.positive {
+    left: 5%;
+  }
+
+  .label.negative {
+    right: 5%;
   }
 
   .circle {
@@ -65,7 +76,6 @@
     background-position: center;
   }
 
-  
   .liver-item img {
     width: 60px;
     height: 60px;
