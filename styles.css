@@ -45,8 +45,8 @@
   }
 
   .liver-item img {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -55,12 +55,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
   }
 
   .liver-item {
     text-align: center;
-    width: 130px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +71,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
   }
 }
 
