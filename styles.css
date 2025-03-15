@@ -24,9 +24,11 @@
 
   .answers {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
+    overflow-x: auto;
+    padding: 10px 0;
   }
 
   .label {
@@ -34,9 +36,10 @@
   }
 
   .circle {
-    width: 48px !important;
-    height: 48px !important;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 50%;
+    flex-shrink: 0;
   }
 
   .circle.selected {
