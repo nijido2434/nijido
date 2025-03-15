@@ -40,22 +40,22 @@
     flex-shrink: 0;
   }
 
-  .answers .circle:nth-child(1), .answers .circle:nth-child(7) {
+  .answers .circle:nth-child(2), .answers .circle:nth-child(8) {
     width: 45px !important;
     height: 45px !important;
   }
 
-  .answers .circle:nth-child(2), .answers .circle:nth-child(6) {
+  .answers .circle:nth-child(3), .answers .circle:nth-child(7) {
     width: 35px !important;
     height: 35px !important;
   }
 
-  .answers .circle:nth-child(3), .answers .circle:nth-child(5) {
+  .answers .circle:nth-child(4), .answers .circle:nth-child(6) {
     width: 30px !important;
     height: 30px !important;
   }
 
-  .answers .circle:nth-child(4) {
+  .answers .circle:nth-child(5) {
     width: 20px !important;
     height: 20px !important;
   }
