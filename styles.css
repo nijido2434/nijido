@@ -40,24 +40,24 @@
   }
 
   /* 回答ボタンのサイズ調整（中央小さく、外側大きく） */
-  .answers .circle:nth-child(1), .answers .circle:nth-child(7) {
-    width: 50px !important;
-    height: 50px !important;
-  }
-
-  .answers .circle:nth-child(2), .answers .circle:nth-child(6) {
+  .answers .circle:nth-child(2), .answers .circle:nth-child(8) {
     width: 45px !important;
     height: 45px !important;
   }
 
-  .answers .circle:nth-child(3), .answers .circle:nth-child(5) {
+  .answers .circle:nth-child(3), .answers .circle:nth-child(7) {
     width: 40px !important;
     height: 40px !important;
   }
 
-  .answers .circle:nth-child(4) {
+  .answers .circle:nth-child(4), .answers .circle:nth-child(8) {
     width: 35px !important;
     height: 35px !important;
+  }
+
+  .answers .circle:nth-child(4) {
+    width: 30px !important;
+    height: 30px !important;
   }
 
   .circle.selected {
@@ -95,6 +95,7 @@
     align-items: center;
   }
 }
+
 
 
 body {
