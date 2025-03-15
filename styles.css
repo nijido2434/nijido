@@ -1,4 +1,6 @@
 
+/* 全体の基本設定 */
+/* スマホ向けのレスポンシブ調整 */
 @media screen and (max-width: 768px) {
   body {
     display: flex;
@@ -26,6 +28,7 @@
   .answers {
     flex-direction: column;
     gap: 8px;
+    align-items: center;
   }
 
   .label {
@@ -33,22 +36,38 @@
   }
 
   .circle {
-    width: 40px !important;
-    height: 40px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .circle.selected {
+    background-size: contain;
   }
 
   .liver-item img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .liver-list {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 
   .question-text {
     font-size: 14px;
     padding: 15px;
+  }
+
+  #recommended-liver-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .liver-item {
+    text-align: center;
+    width: 120px;
   }
 }
 
