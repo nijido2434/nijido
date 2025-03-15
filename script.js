@@ -283,6 +283,7 @@ document.getElementById("next-button").addEventListener("click", () => {
   if (currentPage < 3) {
     currentPage++;
     loadPage();
+    window.scrollTo(0, 0); // ページの先頭にスクロール
   } else {
     calculateResults();
   }
