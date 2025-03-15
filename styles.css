@@ -52,24 +52,26 @@
   }
 
   .liver-list {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
 
-  .question-text {
-    font-size: 14px;
-    padding: 15px;
+  .liver-item {
+    text-align: center;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #recommended-liver-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-  }
-
-  .liver-item {
-    text-align: center;
-    width: 130px;
+    align-items: center;
+    gap: 15px;
   }
 }
 
