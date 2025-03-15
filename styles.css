@@ -50,12 +50,12 @@
     height: 40px !important;
   }
 
-  .answers .circle:nth-child(4), .answers .circle:nth-child(8) {
+  .answers .circle:nth-child(4), .answers .circle:nth-child(6) {
     width: 35px !important;
     height: 35px !important;
   }
 
-  .answers .circle:nth-child(4) {
+  .answers .circle:nth-child(5) {
     width: 30px !important;
     height: 30px !important;
   }
@@ -79,9 +79,9 @@
     justify-content: center;
   }
 
-  .liver-item {
+ .liver-item {
     text-align: center;
-    width: 120px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,8 +89,8 @@
 
   #recommended-liver-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
     justify-content: center;
     align-items: center;
   }
