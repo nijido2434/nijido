@@ -1,0 +1,330 @@
+/* 全体の基本設定 */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  color: #2d3436;
+}
+
+#title-container, #question-container, #result-container {
+  text-align: center;
+  padding: 20px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+}
+
+/* ボタンスタイル */
+.action-button {
+  margin: 20px 0;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #66bb6a, #388e3c);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-button:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.action-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #5aa054, #2e7d32);
+  transform: scale(1.05);
+}
+
+/* 回答ボタンのスタイル */
+.answers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+/* ポジティブラベル（賛成側） */
+.label.positive {
+  color: #66bb6a;
+  margin-right: 10px;
+}
+
+/* ネガティブラベル（反対側） */
+.label.negative {
+  color: #42a5f5;
+  margin-left: 10px;
+}
+
+/* 回答ボタンの基本スタイル */
+.circle {
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 回答ボタンの初期色 */
+.answers .circle:nth-child(2) {
+  background-color: #66bb6a; /* 濃い緑 */
+}
+
+.answers .circle:nth-child(3) {
+  background-color: #81c784; /* 中程度の緑 */
+}
+
+.answers .circle:nth-child(4) {
+  background-color: #a5d6a7; /* 薄い緑 */
+}
+
+.answers .circle:nth-child(5) {
+  background-color: #e0e0e0; /* 中間の灰色 */
+}
+
+.answers .circle:nth-child(6) {
+  background-color: #90caf9; /* 薄い青 */
+}
+
+.answers .circle:nth-child(7) {
+  background-color: #64b5f6; /* 中程度の青 */
+}
+
+.answers .circle:nth-child(8) {
+  background-color: #42a5f5; /* 濃い青 */
+}
+
+/* ホバー効果 */
+.circle:hover {
+  transform: scale(1.1);
+  border-color: #2e7d32; /* 緑の枠 */
+}
+
+/* 選択状態 */
+.circle.selected {
+  background-color: transparent; /* 背景色を透明にする */
+  background-image: url("nj.jpg"); /* 背景画像を設定 */
+  background-size: cover; /* 画像をボタン全体にフィット */
+  background-position: center;
+  transform: scale(1.1); /* 選択時に拡大 */
+  border: 2px solid #2e7d32; /* 選択時の枠 */
+}
+
+/* 回答ボタンのサイズを調整 */
+.answers .circle:nth-child(2),
+.answers .circle:nth-child(8) {
+  width: 55px;
+  height: 55px;
+}
+
+.answers .circle:nth-child(3),
+.answers .circle:nth-child(7) {
+  width: 50px;
+  height: 50px;
+}
+
+.answers .circle:nth-child(4),
+.answers .circle:nth-child(6) {
+  width: 45px;
+  height: 45px;
+}
+
+.answers .circle:nth-child(5) {
+  width: 40px;
+  height: 40px;
+}
+
+/* カテゴリー結果スタイル */
+#category-results {
+  margin-top: 20px;
+}
+
+.category-result {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0; /* 背景灰色 */
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  width: 0%; /* 初期幅は0 */
+  transition: width 0.5s ease-in-out; /* 幅のアニメーション */
+}
+
+.progress.left {
+  background-color: #66bb6a; /* 緑 */
+  transform-origin: left; /* 左から拡張 */
+}
+
+.progress.right {
+  background-color: #42a5f5; /* 青 */
+  transform-origin: right; /* 右から拡張 */
+}
+
+.right-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background-color: #42a5f5; /* 青色 */
+  width: 0%; /* 初期幅は0 */
+  transition: width 0.5s ease-in-out; /* 幅のアニメーション */
+}
+
+
+/* タイプ詳細 */
+#type-description {
+  margin-top: 20px;
+  text-align: left; /* 全体は左揃え */
+  font-size: 16px;
+  color: #2d3436;
+}
+
+#type-description h3 {
+  text-align: center; /* 見出しのみ中央揃え */
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+#type-description p {
+  text-align: left; /* 詳細文章を左揃え */
+  line-height: 1.8; /* 行間を少し広げる */
+  margin: 10px 0; /* 上下に余白を追加 */
+}
+
+
+/* おすすめライバー */
+#recommended-liver {
+  margin-top: 20px;
+  text-align: center; /* 中央揃え */
+  padding: 10px;
+}
+
+#recommended-liver h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.liver-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1行に2つ表示 */
+  gap: 20px;
+  justify-content: center; /* 水平中央揃え */
+}
+
+.liver-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.liver-item img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.liver-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.liver-item p a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.liver-item p a:hover {
+  color: #66bb6a; /* ホバー時の色 */
+}
+
+/* リンクのデフォルトスタイル */
+.liver-item a {
+  text-decoration: underline; /* 下線を付ける */
+  color: #2d3436; /* 通常時の文字色 */
+  font-weight: bold; /* 太字にする */
+  border: 2px solid transparent; /* デフォルトでは枠線なし */
+  padding: 3px 5px; /* 枠内に余白を追加 */
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* スムーズな変化 */
+  border-radius: 5px; /* 枠を丸くする */
+}
+
+/* リンクにマウスを乗せたときのスタイル */
+.liver-item a:hover {
+  color: #ffffff; /* 文字色を白に */
+  border-color: #388e3c; /* 枠線を濃い緑に */
+}
+/*SNS共有*/
+#sns-share {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#sns-share button {
+  background: linear-gradient(135deg, #1da1f2, #0d83d0); /* Twitterの青 */
+}
+
+#sns-share button:hover {
+  transform: scale(1.1);
+}
+
+
+/* ポジティブ・ネガティブラベル */
+.label.positive {
+  margin-right: 15px;
+  font-weight: bold;
+  color: #66bb6a;
+}
+
+.label.negative {
+  margin-left: 15px;
+  font-weight: bold;
+  color: #42a5f5;
+}
+
+.question-text {
+  font-size: 16px; 
+  color: #3c403c;
+  font-weight: bold;
+  line-height: 1.8;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 20px; 
+  background-color: #f8f8f8; 
+  border-radius: 10px; 
+}

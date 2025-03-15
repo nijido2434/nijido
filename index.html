@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>にじどうMBTI診断</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 診断開始画面 -->
+  <div id="title-container">
+    <h1 id="quiz-title">にじどうMBTI診断</h1>
+    <p id="quiz-description">全20個の質問に答えて、あなたのオタクタイプを診断しましょう！</p>
+    <button id="start-button" class="action-button">診断を開始する</button>
+  </div>
+
+  <!-- 質問画面 -->
+  <div id="question-container" style="display: none; max-width: 650px; margin: auto; text-align: center;">
+    <h1>にじどうMBTI診断</h1>
+    <div id="questions-list" class="question-text"></div>
+    <button id="next-button" class="action-button" disabled>次へ進む</button>
+  </div>
+
+  <!-- 結果画面 -->
+  <div id="result-container" style="display: none; text-align: center;">
+  <h2><p>あなたはのタイプは ”<span id="final-name"></span>”</p></h2><span id="final-type"></span>
+  <p id="result-type"><span id="final-type"></span></p>
+
+
+    <!-- カテゴリー結果表示 -->
+    <div id="category-results">
+      <div class="category-result">
+        <span>推し方のスタイル: <span id="a-percentage"></span></span>
+        <div class="progress-bar">
+          <div class="progress" id="a-bar"></div>
+          <div class="right-fill"></div>
+        </div>
+      </div>
+      <div class="category-result">
+        <span>視聴スタイル:  <span id="b-percentage"></span></span>
+        <div class="progress-bar">
+          <div class="progress" id="b-bar"></div>
+          <div class="right-fill"></div>
+        </div>
+      </div>
+      <div class="category-result">
+        <span>貢献スタイル:  <span id="c-percentage"></span></span>
+        <div class="progress-bar">
+          <div class="progress" id="c-bar"></div>
+          <div class="right-fill"></div>
+        </div>
+      </div>
+      <div class="category-result">
+        <span>コミュニティ志向:  <span id="d-percentage"></span></span>
+        <div class="progress-bar">
+          <div class="progress" id="d-bar"></div>
+          <div class="right-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- タイプ詳細 -->
+    <div id="type-description">
+      <h3>タイプ詳細</h3>
+      <p id="type-detail-text"></p>
+    </div>
+
+    <!-- おすすめのライバー -->
+    <div id="recommended-liver">
+      <h3>あなたにおすすめのライバー</h3>
+      <div id="recommended-liver-list" class="liver-list">
+        <!-- ライバー情報がここに動的に挿入されます -->
+      </div>
+    </div>
+
+    <!-- SNSに共有 -->
+    <div id="sns-share" style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+      <button id="share-twitter" class="action-button">Twitterでシェア</button>
+    </div>
+
+    <button class="action-button" onclick="location.reload()">もう一度診断する</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
