@@ -24,10 +24,9 @@
 
   .answers {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
-    overflow-x: auto;
+    gap: 8px;
     padding: 10px 0;
   }
 
@@ -41,22 +40,22 @@
   }
 
   /* 回答ボタンのサイズ調整（中央小さく、外側大きく） */
-  .circle:nth-child(2), .circle:nth-child(8) {
+  .answers .circle:nth-child(1), .answers .circle:nth-child(7) {
     width: 50px !important;
     height: 50px !important;
   }
 
-  .circle:nth-child(3), .circle:nth-child(7) {
+  .answers .circle:nth-child(2), .answers .circle:nth-child(6) {
     width: 45px !important;
     height: 45px !important;
   }
 
-  .circle:nth-child(4), .circle:nth-child(6) {
+  .answers .circle:nth-child(3), .answers .circle:nth-child(5) {
     width: 40px !important;
     height: 40px !important;
   }
 
-  .circle:nth-child(5) {
+  .answers .circle:nth-child(4) {
     width: 35px !important;
     height: 35px !important;
   }
@@ -74,10 +73,10 @@
   }
 
   .liver-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
     justify-content: center;
-    gap: 20px;
   }
 
   .liver-item {
@@ -89,11 +88,11 @@
   }
 
   #recommended-liver-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
   }
 }
 
