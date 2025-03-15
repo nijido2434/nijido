@@ -42,23 +42,23 @@
   }
 
   .answers .circle:nth-child(1), .answers .circle:nth-child(7) {
-    width: 55px !important;
-    height: 55px !important;
-  }
-
-  .answers .circle:nth-child(2), .answers .circle:nth-child(6) {
-    width: 50px !important;
-    height: 50px !important;
-  }
-
-  .answers .circle:nth-child(3), .answers .circle:nth-child(5) {
     width: 45px !important;
     height: 45px !important;
   }
 
-  .answers .circle:nth-child(4) {
+  .answers .circle:nth-child(2), .answers .circle:nth-child(6) {
     width: 40px !important;
     height: 40px !important;
+  }
+
+  .answers .circle:nth-child(3), .answers .circle:nth-child(5) {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .answers .circle:nth-child(4) {
+    width: 25px !important;
+    height: 25px !important;
   }
 
   .circle.selected {
