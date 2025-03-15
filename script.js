@@ -9,7 +9,7 @@ const questions = [
   { text: "過去の配信や関連する情報を調べて、推しのことをより深く知ろうとする。", category: "b" },
   { text: "推しの配信は切り抜きよりも配信をフルで見ようとするタイプだ。", category: "b" },
   { text: "配信を見る際に、考察や解釈をするのが好きだ。", category: "b" },
-  { text: "リアルタイムだけではなくアーカイブが見返すこともよくある。", category: "b" },
+  { text: "リアルタイムだけではなくアーカイブも見返すことがよくある。", category: "b" },
   { text: "あなたは推しのグッズやボイスをよく購入する。", category: "c" },
   { text: "イベントやライブがあればできるだけ参戦したい。", category: "c" },
   { text: "メンバーシップやスパチャで応援することがよくある。", category: "c" },
@@ -51,41 +51,39 @@ const typeName = {
 };
 // 各タイプの詳細
 const typeDescriptions = {
-  ADSC: "AAAAタイプのあなたはリーダーシップがあり、目標志向で、チームを導く力に優れています。",
-  ADSI: "AAABタイプのあなたは創造的で、独自の視点を持ちながらも現実的なアプローチを重視します。",
-  ADEC: "AABAタイプのあなたは協調性があり、仲間と共に目標を達成することに喜びを感じるタイプです。",
-  ADEI: "AABBタイプのあなたは冷静で分析的、問題解決において計画性を重視します。",
-  PDSC: "BAAAタイプのあなたは感情豊かで直感的、周囲を明るくするムードメーカーです。",
-  PDSI: "BAABタイプのあなたは冒険心が強く、新しいことに挑戦するエネルギーを持っています。",
-  PDEC: "BABAタイプのあなたは慎重で堅実、安定した環境を好む落ち着いた性格です。",
-  PDEI: "BABBタイプのあなたは論理的で計画的、効率を重視する実務的なタイプです。",
-  PLSC: "BBAAタイプのあなたは柔軟性があり、変化する環境にも適応しやすい特徴があります。",
-  PLSI: "BBABタイプのあなたは熱意に満ち溢れ、挑戦を楽しむ積極的な性格です。",
-  PLEC: "BBBAタイプのあなたは繊細で細部に気を配る力があり、人の感情に寄り添うことが得意です。",
-  PLEI: "BBBBタイプのあなたは深い洞察力を持ち、慎重に物事を進める熟考型の性格です。",
-  ALEC: "ABBAタイプのあなたはバランス感覚に優れ、創造性と現実性を兼ね備えています。",
-  ALSI: "ABABタイプのあなたは情熱的でありながらも、論理的な視点を持っています。",
-  ALEI: "ABBBタイプのあなたは現実的でありながらも、人間関係を重視し信頼を築くことが得意です。",
-  ALSC: "ABAAタイプのあなたは、協調性を大切にしつつも自分の意見をしっかり持つ頼れる存在です。",
+  ADSC: "ADSCタイプのあなたはリーダーシップがあり、目標志向で、チームを導く力に優れています。",
+  ADSI: "ADSIタイプのあなたは創造的で、独自の視点を持ちながらも現実的なアプローチを重視します。",
+  ADEC: "ADECタイプのあなたは協調性があり、仲間と共に目標を達成することに喜びを感じるタイプです。",
+  ADEI: "ADEIタイプのあなたは冷静で分析的、問題解決において計画性を重視します。",
+  PDSC: "PDSCタイプのあなたは感情豊かで直感的、周囲を明るくするムードメーカーです。",
+  PDSI: "PDSIタイプのあなたは冒険心が強く、新しいことに挑戦するエネルギーを持っています。",
+  PDEC: "PDECタイプのあなたは慎重で堅実、安定した環境を好む落ち着いた性格です。",
+  PDEI: "PDEIタイプのあなたは論理的で計画的、効率を重視する実務的なタイプです。",
+  PLSC: "PLSCタイプのあなたは柔軟性があり、変化する環境にも適応しやすい特徴があります。",
+  PLSI: "PLSIタイプのあなたは熱意に満ち溢れ、挑戦を楽しむ積極的な性格です。",
+  PLEC: "PLECタイプのあなたは繊細で細部に気を配る力があり、人の感情に寄り添うことが得意です。",
+  PLEI: "PLEIタイプのあなたは深い洞察力を持ち、慎重に物事を進める熟考型の性格です。",
+  ALEC: "ALECタイプのあなたはバランス感覚に優れ、創造性と現実性を兼ね備えています。",
+  ALSI: "ALSIタイプのあなたは情熱的でありながらも、論理的な視点を持っています。",
+  ALEI: "ALEIタイプのあなたは現実的でありながらも、人間関係を重視し信頼を築くことが得意です。",
+  ALSC: "ALSCタイプのあなたは、協調性を大切にしつつも自分の意見をしっかり持つ頼れる存在です。",
 };
 
 // 各タイプにおすすめのライバー
 const recommendedLiversWithImages = {
   ADSC: [
-    { title: "星川サラ", img: "pic/hoshikawa_sara.png", url: "https://www.youtube.com/@HoshikawaSara" },
-    { title: "北小路ヒスイ", img: "pic/kitakoji_hisui.png", url: "https://www.youtube.com/channel/UCRqBKoKuX30ruKAq05pCeRQ" },
-    { title: "天宮こころ", img: "pic/amamiya_kokoro.png", url: "https://www.youtube.com/channel/UCkIimWZ9gBJRamKF0rmPU8w" },
-    { title: "魔界ノりりむ", img: "pic/makaino_ririmu.png", url: "https://www.youtube.com/channel/UC9EjSJ8pvxtvPdxLOElv73w" },
-    { title: "ルンルン", img: "pic/lunlun.png", url: "https://www.youtube.com/@Lunlun_nijisanji/streams" },
-    { title: "葛葉", img: "pic/kuzuha.png", url: "https://www.youtube.com/channel/UCSFCh5NL4qXrAy9u-u2lX3g" },
-    { title: "アンジュ・カトリーナ", img: "pic/ange_katrina.png", url: "https://www.youtube.com/@AngeKatrina" },
-    { title: "卯月コウ", img: "pic/uzuki_kou.png", url: "https://www.youtube.com/@UzukiKou" },
+    { title: "戌亥とこ", img: "pic/inui_toko.png", url: "https://www.nijisanji.jp/talents/l/toko-inui" },
+    { title: "町田ちま", img: "pic/machita_chima.png", url: "https://www.nijisanji.jp/talents/l/chima-machita" },
+    { title: "ましろ爻", img: "pic/mashiro_meme.png", url: "https://www.nijisanji.jp/talents/l/meme-mashiro" },
+    { title: "レイン・パターソン", img: "pic/lain_paterson.png", url: "https://www.nijisanji.jp/talents/l/lain-paterson" },
+    { title: "森中花咲", img: "pic/morinaka_kazaki.png", url: "https://www.nijisanji.jp/talents/l/kazaki-morinaka" },
+    
   ],
   ADSI: [
-    { title: "ルンルン", img: "pic/lunlun.png", url: "https://www.youtube.com/@Lunlun_nijisanji/streams" },
-    { title: "葛葉", img: "pic/kuzuha.png", url: "https://www.youtube.com/channel/UCSFCh5NL4qXrAy9u-u2lX3g" },
-    { title: "アンジュ・カトリーナ", img: "pic/ange_katrina.png", url: "https://www.youtube.com/@AngeKatrina" },
-    { title: "卯月コウ", img: "pic/uzuki_kou.png", url: "https://www.youtube.com/@UzukiKou" },
+    { title: "竜胆尊", img: "pic/rindou_mikoto.png", url: "https://www.nijisanji.jp/talents/l/mikoto-rindou" },
+    { title: "白雪巴", img: "pic/shirayuki_tomoe.png", url: "https://www.nijisanji.jp/talents/l/tomoe-shirayuki" },
+    { title: "夢追翔", img: "pic/yumeoi_kakeru.png", url: "https://www.nijisanji.jp/talents/l/kakeru-yumeoi" },
+    { title: "ドーラ", img: "pic/dola.png", url: "https://www.nijisanji.jp/talents/l/dola" },
   ],
   ADEC: [
     { title: "叶", img: "pic/kanae.png", url: "https://www.youtube.com/@Kanae" },
@@ -404,11 +402,12 @@ function displayRecommendedLivers(result) {
  document.getElementById("share-twitter").addEventListener("click", () => {
   const resultText = `私の診断結果は「${
     document.getElementById("final-type").textContent
-  }」でした！あなたも診断してみよう！`;
+  }」でした！あなたも「にじどうMBTI診断」してみよう！`;
   const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
     resultText
   )}&url=${encodeURIComponent(window.location.href)}`;
   window.open(shareUrl, "_blank");
 });
+
 
 
