@@ -24,40 +24,41 @@
 
   .answers {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
     padding: 10px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 
   .label {
     font-size: 12px;
   }
 
+  /* 回答ボタンのサイズ調整（中央小さく、外側大きく） */
   .circle {
     border-radius: 50%;
     flex-shrink: 0;
   }
 
-  /* 回答ボタンのサイズ調整（中央小さく、外側大きく） */
-  .answers .circle:nth-child(2), .answers .circle:nth-child(8) {
+  .answers .circle:nth-child(1), .answers .circle:nth-child(7) {
+    width: 55px !important;
+    height: 55px !important;
+  }
+
+  .answers .circle:nth-child(2), .answers .circle:nth-child(6) {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .answers .circle:nth-child(3), .answers .circle:nth-child(5) {
     width: 45px !important;
     height: 45px !important;
   }
 
-  .answers .circle:nth-child(3), .answers .circle:nth-child(7) {
+  .answers .circle:nth-child(4) {
     width: 40px !important;
     height: 40px !important;
-  }
-
-  .answers .circle:nth-child(4), .answers .circle:nth-child(6) {
-    width: 35px !important;
-    height: 35px !important;
-  }
-
-  .answers .circle:nth-child(5) {
-    width: 30px !important;
-    height: 30px !important;
   }
 
   .circle.selected {
@@ -65,36 +66,38 @@
     background-position: center;
   }
 
+  /* 結果画面の画像サイズ調整 */
   .liver-item img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .liver-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
   }
 
- .liver-item {
+  .liver-item {
     text-align: center;
-    width: 100px;
+    width: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   #recommended-liver-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 8px;
   }
 }
+
 
 
 
