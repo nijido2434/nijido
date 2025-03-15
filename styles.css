@@ -23,9 +23,10 @@
   }
 
   .answers {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
-    align-items: center;
   }
 
   .label {
@@ -71,6 +72,7 @@
     width: 130px;
   }
 }
+
 
 
 body {
