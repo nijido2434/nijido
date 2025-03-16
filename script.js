@@ -175,7 +175,7 @@ const recommendedLiversWithImages = {
     { title: "レオス・ヴィンセント", img: "pic/leos_vincent.png", url: "https://www.nijisanji.jp/talents/l/leos-vincent" },
     { title: "小清水透", img: "pic/koshimizu_toru.png", url: "https://www.nijisanji.jp/talents/l/toru-koshimizu" },
     { title: "獅子堂あかり", img: "pic/shishido_akari.png", url: "https://www.nijisanji.jp/talents/l/akari-shishido" },
-    { title: "渚トラウト", img: "pic/nagisa_toraut.png", url: "https://www.nijisanji.jp/talents/l/trout-nagisa" },
+    { title: "渚トラウト", img: "pic/nagisa_trout.png", url: "https://www.nijisanji.jp/talents/l/trout-nagisa" },
     { title: "早乙女ベリー", img: "pic/saotome_berry.png", url: "https://www.nijisanji.jp/talents/l/berry-saotome" },
     { title: "司賀りこ", img: "pic/shiga_riko.png", url: "https://www.nijisanji.jp/talents/l/riko-shiga" },
     { title: "雲母たまこ", img: "pic/kirara_tamako.png", url: "https://www.nijisanji.jp/talents/l/tamako-kirara" },
