@@ -207,7 +207,7 @@ const recommendedLiversWithImages = {
     { title: "ソフィア・ヴァレンタイン", img: "pic/sophia_valentine.png", url: "https://www.nijisanji.jp/talents/l/sophia-valentine" },
     { title: "小柳ロウ", img: "pic/koyanagi_rou.png", url: "https://www.nijisanji.jp/talents/l/rou-koyanagi" },
     { title: "ヤン　ナリ", img: "pic/yang_nari.png", url: "https://www.nijisanji.jp/talents/l/yang-nari" },
-    { title: "緋八マナ", img: "pic/hibachi_mana", url: "https://www.nijisanji.jp/talents/l/mana-hibachi" },
+    { title: "緋八マナ", img: "pic/hibachi_mana.png", url: "https://www.nijisanji.jp/talents/l/mana-hibachi" },
     { title: "石神のぞみ", img: "pic/ishigami_nozomi.png", url: "https://www.nijisanji.jp/talents/l/nozomi-ishigami" },
     { title: "七瀬すず菜", img: "pic/nanase_suzuna.png", url: "https://www.nijisanji.jp/talents/l/suzuna-nanase" },
   ],
