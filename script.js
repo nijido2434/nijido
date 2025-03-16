@@ -218,7 +218,7 @@ const recommendedLiversWithImages = {
     { title: "ルンルン", img: "pic/lunlun.png", url: "https://www.nijisanji.jp/talents/l/lunlun" },
     { title: "シスター・クレア", img: "pic/sister_claire.png", url: "https://www.nijisanji.jp/talents/l/sister-claire" },
     { title: "栞葉るり", img: "pic/shioriha_ruri.png", url: "https://www.nijisanji.jp/talents/l/ruri-shioriha" },
-    { title: "早瀬走", img: "pic/fura_kanato.png", url: "https://www.nijisanji.jp/talents/l/sou-hayase" },
+    { title: "早瀬走", img: "pic/hayase_sou.png", url: "https://www.nijisanji.jp/talents/l/sou-hayase" },
     { title: "立伝都々", img: "pic/tachitsute_toto.png", url: "https://www.nijisanji.jp/talents/l/toto-tachitsute" },
   ],
   ALSC: [
