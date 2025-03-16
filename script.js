@@ -90,7 +90,7 @@ const recommendedLiversWithImages = {
     { title: "ドーラ", img: "pic/dola.png", url: "https://www.nijisanji.jp/talents/l/dola" },
     { title: "エリー・コニファー", img: "pic/eli_conifer.png", url: "https://www.nijisanji.jp/talents/l/eli-conifer" },
     { title: "えま★おうがすと", img: "pic/emma_august.png", url: "https://www.nijisanji.jp/talents/l/emma-august" },
-    { title: "愛園愛美", img: "pic/aizonomanami.png", url: "https://www.nijisanji.jp/talents/l/manami-aizono" },
+    { title: "愛園愛美", img: "pic/aizono_manami.png", url: "https://www.nijisanji.jp/talents/l/manami-aizono" },
     { title: "東堂コハク", img: "pic/todo_kohaku.png", url: "https://www.nijisanji.jp/talents/l/kohaku-todo" },
   ],
   ADEC: [
