@@ -113,7 +113,7 @@ const recommendedLiversWithImages = {
     { title: "雨森小夜", img: "pic/amemori_sayo.png", url: "https://www.nijisanji.jp/talents/l/sayo-amemori" },
     { title: "ミラン・ケストレル", img: "pic/milan_kestrel.png", url: "https://www.nijisanji.jp/talents/l/milan-kestrel" },
     { title: "轟京子", img: "pic/todoroki_kyoko.png", url: "https://www.nijisanji.jp/talents/l/kyoko-todoroki" },
-    { title: "矢車りね", img: "pic/yaguruma_rine.png", url: "https://www.nijisanji.jp/talents/l/trout-nagisa" },
+    { title: "矢車りね", img: "pic/yaguruma_rine.png", url: "https://www.nijisanji.jp/talents/l/rine-yaguruma" },
   ],
   PDSC: [
     { title: "壱百満天原サロメ", img: "pic/hyakumantenbara_sarome.png", url: "https://www.nijisanji.jp/talents/l/salome-hyakumantenbara" },
