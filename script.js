@@ -142,10 +142,10 @@ const recommendedLiversWithImages = {
   ],
   PDEI: [
     { title: "社築", img: "pic/yashiro_kizuku.png", url: "https://www.nijisanji.jp/talents/l/kizuku-yashiro"},
-    { title: "ニュイ・ソシエール", img: "pic/nui_sociere", url: "https://www.nijisanji.jp/talents/l/nui-sociere" },
+    { title: "ニュイ・ソシエール", img: "pic/nui_sociere.png", url: "https://www.nijisanji.jp/talents/l/nui-sociere" },
     { title: "葉山舞鈴", img: "pic/hayama_marin.png", url: "https://www.nijisanji.jp/talents/l/marin-hayama" },
     { title: "グウェル・オス・ガール", img: "pic/gwelu_os_gar.png", url: "https://www.nijisanji.jp/talents/l/gwelu-os-gar" },
-    { title: "静凛", img: "pic/sizuka_rin.png", url: "https://www.nijisanji.jp/talents/l/rin-shizuka" },
+    { title: "静凛", img: "pic/shizuka_rin.png", url: "https://www.nijisanji.jp/talents/l/rin-shizuka" },
     { title: "フミ", img: "pic/fumi.png", url: "https://www.nijisanji.jp/talents/l/fumi" },
     { title: "赤羽葉子", img: "pic/akabane_youko.png", url: "https://www.nijisanji.jp/talents/l/youko-akabane" },
     { title: "宇志海いちご", img: "pic/ushimi_ichigo.png", url: "https://www.nijisanji.jp/talents/l/ichigo-ushimi" },
