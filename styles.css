@@ -33,18 +33,18 @@
   }
 
  .label {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     position: absolute;
-    top: -25px;
+    top: -30px;
   }
 
   .label.positive {
-    left: 10;
+    left: 15%;
   }
 
   .label.negative {
-    right: 10;
+    right: 15%;
   }
 
   .circle {
@@ -53,23 +53,23 @@
   }
 
   .answers .circle:nth-child(2), .answers .circle:nth-child(8) {
-    width: 45px !important;
-    height: 45px !important;
+    width: 45px;
+    height: 45px;
   }
 
   .answers .circle:nth-child(3), .answers .circle:nth-child(7) {
-    width: 35px !important;
-    height: 35px !important;
+    width: 35px;
+    height: 35px;
   }
 
   .answers .circle:nth-child(4), .answers .circle:nth-child(6) {
-    width: 30px !important;
-    height: 30px !important;
+    width: 30px;
+    height: 30px;
   }
 
   .answers .circle:nth-child(5) {
-    width: 20px !important;
-    height: 20px !important;
+    width: 25px;
+    height: 25px;
   }
 
   .circle.selected {
