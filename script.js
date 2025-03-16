@@ -102,7 +102,7 @@ const recommendedLiversWithImages = {
     { title: "小野町春香", img: "pic/onomachi_haruka.png", url: "https://www.nijisanji.jp/talents/l/haruka-onomachi"},
     { title: "雪城眞尋", img: "pic/yukishiro_mahiro.png", url: "https://www.nijisanji.jp/talents/l/mahiro-yukishiro"},
     { title: "綺沙良", img: "pic/kisara.png", url: "https://www.nijisanji.jp/talents/l/kisara"},
-    { title: "梢桃音", img: "pickozue_mone.png", url: "https://www.nijisanji.jp/talents/l/mone-kozue"},
+    { title: "梢桃音", img: "pic/kozue_mone.png", url: "https://www.nijisanji.jp/talents/l/mone-kozue"},
   ],
   ADEI: [
     { title: "文野環", img: "pic/fumino_tamaki.png", url: "https://www.nijisanji.jp/talents/l/tamaki-fumino" },
