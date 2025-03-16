@@ -229,7 +229,7 @@ const recommendedLiversWithImages = {
     { title: "四季凪アキラ", img: "pic/shikinagi_akira.png", url: "https://www.nijisanji.jp/talents/l/akira-shikinagi" },
     { title: "セラフ・ダズルガーデン", img: "pic/seraph_dazzlegarden.png", url: "https://www.nijisanji.jp/talents/l/seraph-dazzlegarden" },
     { title: "五十嵐梨花", img: "pic/igarashi_rika.png", url: "https://www.nijisanji.jp/talents/l/rika-igarashi"},
-    { title: "宇佐美リト", img: "pic/usami_rito", url: "https://www.nijisanji.jp/talents/l/rito-usami" },
+    { title: "宇佐美リト", img: "pic/usami_rito.png", url: "https://www.nijisanji.jp/talents/l/rito-usami" },
     { title: "北見遊征", img: "pic/kitami_yusei.png", url: "https://www.nijisanji.jp/talents/l/yusei-kitami" },
   ],
 };
