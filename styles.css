@@ -34,21 +34,21 @@
   }
 
  .label {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     position: absolute;
-    top: -35px;
+    top: -38px;
     white-space: nowrap; 
     text-align: center;
     width: auto;
   }
 
   .label.positive {
-    left: 20%;
+    left: 22%;
   }
 
   .label.negative {
-    right: 20%;
+    right: 22%;
   }
 
   .circle {
@@ -57,23 +57,23 @@
   }
 
   .answers .circle:nth-child(2), .answers .circle:nth-child(8) {
-    width: 40px;
-    height: 40px;
-  }
-
-  .answers .circle:nth-child(3), .answers .circle:nth-child(7) {
     width: 35px;
     height: 35px;
   }
 
-  .answers .circle:nth-child(4), .answers .circle:nth-child(6) {
+  .answers .circle:nth-child(3), .answers .circle:nth-child(7) {
     width: 30px;
     height: 30px;
   }
 
-  .answers .circle:nth-child(5) {
+  .answers .circle:nth-child(4), .answers .circle:nth-child(6) {
     width: 25px;
     height: 25px;
+  }
+
+  .answers .circle:nth-child(5) {
+    width: 22px;
+    height: 22px;
   }
 
   .circle.selected {
