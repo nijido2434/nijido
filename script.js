@@ -212,7 +212,7 @@ const recommendedLiversWithImages = {
     { title: "七瀬すず菜", img: "pic/nanase_suzuna.png", url: "https://www.nijisanji.jp/talents/l/suzuna-nanase" },
   ],
   ALEI: [
-    { title: "剣持刀也", img: "pic/kenmochi_touya.png", url: "https://www.nijisanji.jp/talents/l/touya-kenmochi" },
+    { title: "剣持刀也", img: "pic/kenmochi_toya.png", url: "https://www.nijisanji.jp/talents/l/toya-kenmochi" },
     { title: "リゼ・ヘルエスタ", img: "pic/lize_helesta.png", url: "https://www.nijisanji.jp/talents/l/lize-helesta" },
     { title: "緑仙", img: "pic/ryushen.png", url: "https://www.nijisanji.jp/talents/l/ryushen" },
     { title: "ルンルン", img: "pic/lunlun.png", url: "https://www.nijisanji.jp/talents/l/lunlun" },
