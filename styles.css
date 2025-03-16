@@ -39,11 +39,11 @@
   }
 
   .label.positive {
-    left: 5%;
+    left: 10%;
   }
 
   .label.negative {
-    right: 5%;
+    right: 10%;
   }
 
   .circle {
