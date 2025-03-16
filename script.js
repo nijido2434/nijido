@@ -32,22 +32,22 @@ const categoryScores = {
 
 //各タイプの名称
 const typeName = {
-  ADSC: "ほしくず",
-  ADSI: "ほしく",
-  ADEC: "ほしず",
-  ADEI: "しくず",
-  PDSC: "ほくず",
-  PDSI: "ほしず",
-  PDEC: "ほしず",
-  PDEI: "ほしくず",
-  PLSC: "ほしかわ",
-  PLSI: "ほしかわ",
-  PLEC: "ほしかわ",
-  PLEI: "ほしかわ",
-  ALEC: "ほしかわ",
-  ALSI: "ほしかわ",
-  ALEI: "ほしかわ",
-  ALSC: "ほしかわ",
+  ADSC: "戌亥とこタイプ",
+  ADSI: "竜胆尊タイプ",
+  ADEC: "でびでび・でびるタイプ",
+  ADEI: "文野環タイプ",
+  PDSC: "壱百満天原サロメタイプ",
+  PDSI: "健屋花那タイプ",
+  PDEC: "イブラヒムタイプ",
+  PDEI: "社築タイプ",
+  PLSC: "不破湊タイプ",
+  PLSI: "叶タイプ",
+  PLEC: "本間ひまわりタイプ",
+  PLEI: "葛葉タイプ",
+  ALEC: "笹木咲タイプ",
+  ALSI: "星川タイプ",
+  ALEI: "剣持タイプ",
+  ALSC: "アンジュタイプ",
 };
 // 各タイプの詳細
 const typeDescriptions = {
