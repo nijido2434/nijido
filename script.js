@@ -286,6 +286,7 @@ document.getElementById("next-button").addEventListener("click", () => {
     window.scrollTo(0, 0); // ページの先頭にスクロール
   } else {
     calculateResults();
+    window.scrollTo(0, 0);
   }
 });
 
