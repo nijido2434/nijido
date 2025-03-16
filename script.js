@@ -116,7 +116,7 @@ const recommendedLiversWithImages = {
     { title: "矢車りね", img: "pic/yaguruma_rine.png", url: "https://www.nijisanji.jp/talents/l/rine-yaguruma" },
   ],
   PDSC: [
-    { title: "壱百満天原サロメ", img: "pic/hyakumantenbara_sarome.png", url: "https://www.nijisanji.jp/talents/l/salome-hyakumantenbara" },
+    { title: "壱百満天原サロメ", img: "pic/hyakumantenbara_salome.png", url: "https://www.nijisanji.jp/talents/l/salome-hyakumantenbara" },
     { title: "加賀美ハヤト", img: "pic/kagami_hayato.png", url: "https://www.nijisanji.jp/talents/l/hayato-kagami" },
     { title: "弦月藤士郎", img: "pic/genzuki_tojiro.png", url: "https://www.nijisanji.jp/talents/l/tojiro-genzuki" },
     { title: "佐伯イッテツ", img: "pic/saiki_ittetsu.png", url: "https://www.nijisanji.jp/talents/l/ittetsu-saiki" },
