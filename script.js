@@ -464,13 +464,15 @@ function displayRecommendedLivers(result) {
   }
 }
 
- document.getElementById("share-twitter").addEventListener("click", () => {
-  const resultText = `私の診断結果は「${
-    document.getElementById("final-type").textContent
-  }」でした！あなたも「にじどうMBTI診断」してみよう！`;
+document.getElementById("share-twitter").addEventListener("click", () => {
+  const type = document.getElementById("final-type").textContent;
+  const name = document.getElementById("final-name").textContent;
+  
+  const resultText = `あなたのタイプは「${type}：${name}」でした！あなたも「にじどうMBTI診断」してみよう！`;
   const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
     resultText
   )}&url=${encodeURIComponent(window.location.href)}`;
+
   window.open(shareUrl, "_blank");
 });
 
