@@ -15,10 +15,10 @@
   body::before {
     content: "";
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
-    width: 70%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     transform: translateX(-50%) rotate(-15deg);
     background: url('njshin.png') no-repeat center center;
     background-size: contain;
@@ -28,13 +28,12 @@
   }
 
   #title-container, #question-container, #result-container {
-    width: 95%;
-    max-width: 100%;
-    padding: 10px;
-    box-shadow: none;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.85); /* 透過背景 */
+    width: 100%;
+    max-width: 600px; /* 画面幅に応じて最大幅を設定 */
+    margin: 0 auto; /* 左右中央揃え */
+    text-align: center; /* 文章の中央揃え */
   }
+
 
 
   .action-button {
