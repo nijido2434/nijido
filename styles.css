@@ -10,16 +10,6 @@
     margin: 0 auto; /* コンテンツを中央揃え */
   }
 
-  body::before {
-    top: 10%; 
-    left: -10%; 
-    width: 50%; 
-    height: 50%;
-    transform: rotate(-15deg);
-    background-size: contain; 
-    opacity: 0.4; 
-  }
-
   #title-container, #question-container, #result-container {
     width: 90%; 
     max-width: 500px; 
