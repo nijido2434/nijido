@@ -354,9 +354,10 @@ body::before {
 
 .liver-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1行に2つ表示 */
+  grid-template-columns: repeat(2, 1fr); /* 2列固定 */
   gap: 20px;
-  justify-content: center; /* 水平中央揃え */
+  justify-content: center; 
+  max-width: 600px; 
 }
 
 .liver-item {
