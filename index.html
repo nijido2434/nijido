@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>にじどうMBTI診断</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Dela Gothic Oneフォントを読み込み -->
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,6 +17,7 @@
 
 </body>
 </html>
+
 <body>
   <!-- 診断開始画面 -->
   <div id="background-overlay">
@@ -29,7 +31,9 @@
   <div id="question-container" style="display: none; max-width: 650px; margin: auto; text-align: center;">
     <h1>にじどうMBTI診断</h1>
     <div id="questions-list" class="question-text"></div>
+    <button id="prev-button" class="action-button" style="display: none;">前のページへ戻る</button>
     <button id="next-button" class="action-button" disabled>次へ進む</button>
+
   </div>
 
   <!-- 結果画面 -->
@@ -95,4 +99,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
