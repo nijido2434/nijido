@@ -10,11 +10,11 @@
   }
 
   #title-container, #question-container, #result-container {
-    width: 95%;
+    width: 100%;
     max-width: 100%;
-    padding: 20px;
+    padding: 0px;
     box-shadow: none;
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   .action-button {
