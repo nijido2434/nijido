@@ -8,33 +8,15 @@
     padding: 10px;
     background: linear-gradient(135deg, #a3f2a7, #e0e0e0);
     overflow-x: hidden; 
-    position: relative;
-  }
-
-  /* 透過画像の調整 */
-  body::before {
-    content: "";
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translateX(-50%) rotate(-15deg);
-    background: url('njshin.png') no-repeat center center;
-    background-size: contain;
-    opacity: 0.5;
-    z-index: -1; 
-    pointer-events: none; 
   }
 
   #title-container, #question-container, #result-container {
     width: 100%;
-    max-width: 600px; /* 画面幅に応じて最大幅を設定 */
-    margin: 0 auto; /* 左右中央揃え */
-    text-align: center; /* 文章の中央揃え */
+    max-width: 100%;
+    padding: 0px;
+    box-shadow: none;
+    border-radius: 0px;
   }
-
-
 
   .action-button {
     width: 100%;
@@ -502,5 +484,3 @@ body::before {
   opacity: 0.5;
   z-index: -1;
 }
-
-
