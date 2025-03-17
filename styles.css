@@ -92,10 +92,6 @@
     background-position: center;
   }
 
-  .liver-list {
-    grid-template-columns: 1fr;
-  }
-
   .liver-item img {
     width: 180px;
     height: 180px;
