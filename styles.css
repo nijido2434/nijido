@@ -1,13 +1,11 @@
 /* スマホ向けのレスポンシブ調整 */
 @media screen and (max-width: 780px) {
   body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    display: block; /* flexを解除 */
     padding: 10px;
     background: linear-gradient(135deg, #a3f2a7, #e0e0e0);
     overflow-x: hidden; 
+    margin: 0 auto; /* コンテンツを中央揃え */
   }
 
   body::before {
@@ -21,8 +19,9 @@
   }
 
   #title-container, #question-container, #result-container {
-    width: 100%;
-    max-width: 100%;
+    width: 90%; 
+    max-width: 500px; 
+    margin: 0 auto;
     padding: 0px;
     box-shadow: none;
     border-radius: 0px;
