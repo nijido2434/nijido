@@ -87,6 +87,10 @@
     flex-shrink: 0; /* 縮小しない */
   }
 
+  .liver-list {
+    grid-template-columns: 1fr !important;
+  }
+
   .circle.selected {
     background-size: cover;
     background-position: center;
@@ -354,10 +358,10 @@ body::before {
 
 .liver-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2列固定 */
+  grid-template-columns: repeat(2, 1fr); /* PC版は2列 */
   gap: 20px;
-  justify-content: center; 
-  max-width: 600px; 
+  justify-content: center;
+  max-width: 600px;
 }
 
 .liver-item {
