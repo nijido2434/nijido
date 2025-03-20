@@ -326,7 +326,7 @@ body::before {
 /* タイプ詳細 */
 #type-description {
   margin-top: 20px;
-  text-align: left; /* 全体は左揃え */
+  text-align: center; /* 全体は左揃え */
   font-size: 16px;
   color: #2d3436;
 }
@@ -340,7 +340,7 @@ body::before {
 }
 
 #type-description p {
-  text-align: left; /* 詳細文章を左揃え */
+  text-align: center; /* 詳細文章を左揃え */
   line-height: 1.8; /* 行間を少し広げる */
   margin: 10px 0; /* 上下に余白を追加 */
 }
