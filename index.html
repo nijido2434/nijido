@@ -90,9 +90,11 @@
     </div>
 
     <!-- SNSに共有 -->
-    <div id="sns-share" style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
-      <button id="share-twitter" class="action-button">Twitterでシェア</button>
-    </div>
+   <div id="sns-share" style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+        <button id="share-twitter" class="action-button" disabled>Twitterでシェア</button>
+      </div>
+
+      <p id="share-disabled-message">現在、共有機能は停止中です</p>
 
     <button class="action-button" onclick="location.reload()">もう一度診断する</button>
   </div>
